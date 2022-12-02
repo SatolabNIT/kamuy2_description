@@ -1,0 +1,482 @@
+<?xml version="1.0" ?>
+<robot name="kamuy2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find kamuy2_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find kamuy2_description)/urdf/kamuy2.trans" />
+<xacro:include filename="$(find kamuy2_description)/urdf/kamuy2.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.00025193197119904756 0.0011290062234152254 0.10689635737270876" rpy="0 0 0"/>
+    <mass value="3.1908830685300313"/>
+    <inertia ixx="0.006226" iyy="0.123536" izz="0.126673" ixy="0.0" iyz="-7e-06" ixz="3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0.03" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0.03" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="front_left_link_second">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.08058045794484539"/>
+    <inertia ixx="0.000409" iyy="0.000392" izz="6.2e-05" ixy="0.0" iyz="4.8e-05" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/front_left_link_second.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/front_left_link_second.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="back_left_link_second">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.08058045794484539"/>
+    <inertia ixx="0.000409" iyy="0.000392" izz="6.2e-05" ixy="0.0" iyz="4.8e-05" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/back_left_link_second.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/back_left_link_second.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="front_right_link_second">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.08058045794484527"/>
+    <inertia ixx="0.000409" iyy="0.000392" izz="6.2e-05" ixy="-0.0" iyz="-4.8e-05" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/front_right_link_second.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/front_right_link_second.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="back_right_link_second">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.08058045794484527"/>
+    <inertia ixx="0.000409" iyy="0.000392" izz="6.2e-05" ixy="-0.0" iyz="-4.8e-05" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/back_right_link_second.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/back_right_link_second.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="front_right_link_first">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.34395759179931723"/>
+    <inertia ixx="0.000244" iyy="0.001214" izz="0.001272" ixy="-5e-05" iyz="1e-06" ixz="-4e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/front_right_link_first.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/front_right_link_first.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="front_left_link_first">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.34395759179934193"/>
+    <inertia ixx="0.000244" iyy="0.001214" izz="0.001272" ixy="5e-05" iyz="-1e-06" ixz="-4e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/front_left_link_first.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/front_left_link_first.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="back_right_link_first">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.34395759179934193"/>
+    <inertia ixx="0.000244" iyy="0.001214" izz="0.001272" ixy="5e-05" iyz="1e-06" ixz="4e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/back_right_link_first.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/back_right_link_first.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="back_left_link_first">
+  <inertial>
+    <origin xyz="0.0944653660519865 0.003464242618647702 -0.03287189320851288" rpy="0 0 0"/>
+    <mass value="0.34395759179931723"/>
+    <inertia ixx="0.000244" iyy="0.001214" izz="0.001272" ixy="-5e-05" iyz="-1e-06" ixz="4e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/back_left_link_first.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/back_left_link_first.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="back_left_link_foot">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.2932724386587248"/>
+    <inertia ixx="0.002288" iyy="0.002324" izz="0.00015" ixy="4e-06" iyz="1e-05" ixz="-0.000187"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/back_left_link_foot.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/back_left_link_foot.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="front_left_link_foot">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.2932724386587248"/>
+    <inertia ixx="0.002288" iyy="0.002324" izz="0.00015" ixy="4e-06" iyz="1e-05" ixz="-0.000187"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/front_left_link_foot.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/front_left_link_foot.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="front_right_link_foot">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.29327243865872493"/>
+    <inertia ixx="0.002288" iyy="0.002324" izz="0.00015" ixy="-4e-06" iyz="-1e-05" ixz="-0.000187"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/front_right_link_foot.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/front_right_link_foot.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="back_right_link_foot">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.29327243865872493"/>
+    <inertia ixx="0.002288" iyy="0.002324" izz="0.00015" ixy="-4e-06" iyz="-1e-05" ixz="-0.000187"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/back_right_link_foot.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://kamuy2_description/meshes/back_right_link_foot.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+
+<!--
+
+
+<joint name="fr1" type="revolute">
+  <origin xyz="0.295288 -0.072993 0.06454" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="front_right_link_first"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+  <limit upper="0.785398" lower="-0.785398" effort="100" velocity="100"/>
+</joint>
+
+<joint name="fl1" type="revolute">
+  <origin xyz="0.295288 0.057189 0.06454" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="front_left_link_first"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+  <limit upper="0.785398" lower="-0.785398" effort="100" velocity="100"/>
+</joint>
+
+<joint name="br1" type="revolute">
+  <origin xyz="-0.287095 -0.06509 0.031" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="back_right_link_first"/>
+  <axis xyz="-1.0 5e-06 -0.0"/>
+  <limit upper="0.785398" lower="-0.785398" effort="100" velocity="100"/>
+</joint>
+
+<joint name="bl1" type="revolute">
+  <origin xyz="-0.279337 0.057192 0.06454" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="back_left_link_first"/>
+  <axis xyz="-1.0 5e-06 -0.0"/>
+  <limit upper="0.785398" lower="-0.785398" effort="100" velocity="100"/>
+</joint>
+
+<joint name="fl2" type="revolute">
+  <origin xyz="-0.094399 0.094475 -0.033545" rpy="0 0 0"/>
+  <parent link="front_left_link_first"/>
+  <child link="front_left_link_second"/>
+  <axis xyz="0.0 1.0 0.0"/>
+  <limit upper="3.141593" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="bl2" type="revolute">
+  <origin xyz="0.078886 0.094475 -0.033545" rpy="0 0 0"/>
+  <parent link="back_left_link_first"/>
+  <child link="back_left_link_second"/>
+  <axis xyz="-5e-06 -1.0 -0.0"/>
+  <limit upper="0.087266" lower="-3.141593" effort="100" velocity="100"/>
+</joint>
+
+<joint name="fr2" type="revolute">
+  <origin xyz="-0.094399 -0.078675 -0.033545" rpy="0 0 0"/>
+  <parent link="front_right_link_first"/>
+  <child link="front_right_link_second"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+  <limit upper="3.141593" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="br2" type="revolute">
+  <origin xyz="0.084642 -0.086575 -5e-06" rpy="0 0 0"/>
+  <parent link="back_right_link_first"/>
+  <child link="back_right_link_second"/>
+  <axis xyz="-5e-06 -1.0 -0.0"/>
+  <limit upper="0.0" lower="-3.141593" effort="100" velocity="100"/>
+</joint>
+
+
+
+<joint name="bl3" type="revolute">
+  <origin xyz="-0.169004 0.127167 0.200451" rpy="0 0 0"/>
+  <parent link="back_left_link_second"/>
+  <child link="back_left_link_foot"/>
+  <axis xyz="-5e-06 -1.0 -0.0"/>
+  <limit upper="3.141593" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="fl3" type="revolute">
+  <origin xyz="-0.169005 0.130164 -0.200889" rpy="0 0 0"/>
+  <parent link="front_left_link_second"/>
+  <child link="front_left_link_foot"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+  <limit upper="3.141593" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="fr3" type="revolute">
+  <origin xyz="-0.169005 -0.127168 -0.200889" rpy="0 0 0"/>
+  <parent link="front_right_link_second"/>
+  <child link="front_right_link_foot"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+  <limit upper="3.141593" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="br3" type="revolute">
+  <origin xyz="-0.169005 -0.127165 0.202453" rpy="0 0 0"/>
+  <parent link="back_right_link_second"/>
+  <child link="back_right_link_foot"/>
+  <axis xyz="-5e-06 -1.0 -0.0"/>
+  <limit upper="3.141593" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+-->
+
+<joint name="fr1" type="revolute">
+  <origin xyz="0.200441 -0.065042 0.030961" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="front_right_link_first"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+  <limit upper="0.785398" lower="-0.785398" effort="100" velocity="100"/>
+</joint>
+
+<joint name="fl1" type="revolute">
+  <origin xyz="0.200441 0.065042 0.030961" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="front_left_link_first"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+  <limit upper="0.785398" lower="-0.785398" effort="100" velocity="100"/>
+</joint>
+
+<joint name="br1" type="revolute">
+  <origin xyz="-0.200441 -0.06509 0.030961" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="back_right_link_first"/>
+  <axis xyz="-1.0 5e-06 -0.0"/>
+  <limit upper="0.785398" lower="-0.785398" effort="100" velocity="100"/>
+</joint>
+
+<joint name="bl1" type="revolute">
+  <origin xyz="-0.200441 0.065042 0.030961" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="back_left_link_first"/>
+  <axis xyz="-1.0 5e-06 -0.0"/>
+  <limit upper="0.785398" lower="-0.785398" effort="100" velocity="100"/>
+</joint>
+
+<joint name="fl2" type="revolute">
+  <origin xyz="0 0.094475 0" rpy="0 0 0"/>
+  <parent link="front_left_link_first"/>
+  <child link="front_left_link_second"/>
+  <axis xyz="0.0 1.0 0.0"/>
+  <limit upper="3.141593" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="bl2" type="revolute">
+  <origin xyz="0 0.094475 0" rpy="0 0 0"/>
+  <parent link="back_left_link_first"/>
+  <child link="back_left_link_second"/>
+  <axis xyz="-5e-06 -1.0 -0.0"/>
+  <limit upper="0.087266" lower="-3.141593" effort="100" velocity="100"/>
+</joint>
+
+<joint name="fr2" type="revolute">
+  <origin xyz="0 -0.078675 0" rpy="0 0 0"/>
+  <parent link="front_right_link_first"/>
+  <child link="front_right_link_second"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+  <limit upper="3.141593" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="br2" type="revolute">
+  <origin xyz="0 -0.086575 0" rpy="0 0 0"/>
+  <parent link="back_right_link_first"/>
+  <child link="back_right_link_second"/>
+  <axis xyz="-5e-06 -1.0 -0.0"/>
+  <limit upper="0.0" lower="-3.141593" effort="100" velocity="100"/>
+</joint>
+
+
+
+<joint name="bl3" type="revolute">
+  <origin xyz="0.200 0 0 " rpy="0 0 0"/>
+  <parent link="back_left_link_second"/>
+  <child link="back_left_link_foot"/>
+  <axis xyz="-5e-06 -1.0 -0.0"/>
+  <limit upper="3.141593" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="fl3" type="revolute">
+  <origin xyz="0.200 0 0" rpy="0 0 0"/>
+  <parent link="front_left_link_second"/>
+  <child link="front_left_link_foot"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+  <limit upper="3.141593" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="fr3" type="revolute">
+  <origin xyz="0.200 0 0" rpy="0 0 0"/>
+  <parent link="front_right_link_second"/>
+  <child link="front_right_link_foot"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+  <limit upper="3.141593" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="br3" type="revolute">
+  <origin xyz="0.200 0 0" rpy="0 0 0"/>
+  <parent link="back_right_link_second"/>
+  <child link="back_right_link_foot"/>
+  <axis xyz="-5e-06 -1.0 -0.0"/>
+  <limit upper="3.141593" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+</robot>
