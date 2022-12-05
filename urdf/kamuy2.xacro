@@ -237,19 +237,19 @@
 
 <link name="front_right_link_foot">
   <inertial>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <origin xyz="0 0 0" rpy="3.141592 0 0"/>
     <mass value="0.29327243865872493"/>
     <inertia ixx="0.002288" iyy="0.002324" izz="0.00015" ixy="-4e-06" iyz="-1e-05" ixz="-0.000187"/>
   </inertial>
   <visual>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <origin xyz="0 0 0" rpy="3.141592 0 0"/>
     <geometry>
       <mesh filename="package://kamuy2_description/meshes/front_right_link_foot.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <origin xyz="0 0 0" rpy="3.141592 0 0"/>
     <geometry>
       <mesh filename="package://kamuy2_description/meshes/front_right_link_foot.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -258,19 +258,19 @@
 
 <link name="back_right_link_foot">
   <inertial>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <origin xyz="0 0 0" rpy="3.141592 0 0"/>
     <mass value="0.29327243865872493"/>
     <inertia ixx="0.002288" iyy="0.002324" izz="0.00015" ixy="-4e-06" iyz="-1e-05" ixz="-0.000187"/>
   </inertial>
   <visual>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <origin xyz="0 0 0" rpy="3.141592 0 0"/>
     <geometry>
       <mesh filename="package://kamuy2_description/meshes/back_right_link_foot.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <origin xyz="0 0 0" rpy="3.141592 0 0"/>
     <geometry>
       <mesh filename="package://kamuy2_description/meshes/back_right_link_foot.stl" scale="0.001 0.001 0.001"/>
     </geometry>
